@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Predict the number of empty rooms for a shelter</title>
+	<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet" type="text/css" />
+	<link href="https://fonts.googleapis.com/css?family=Arimo" rel="stylesheet" type="text/css" />
+	<link href="https://fonts.googleapis.com/css?family=Hind:300" rel="stylesheet" type="text/css" />
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet" type="text/css" />
+	<link href="{{ url_for('static', filename='./style.css') }}" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div class="login">
+<h1>Predict the number of empty rooms in a shelter</h1>
+<!-- Form to enter new data for predictions  -->
+<form action="{{ url_for('predict')}}" method="POST">
+
+
+<input name="Existing Shelters In Area" placeholder="Existing Shelters In Area" required="required" type="number" /><br />
+<input name="Max Temp (°C)" placeholder="Max Temp (°C)" required="required" type="number" /><br />
+<input name="Min Temp (°C)" placeholder="Min Temp (°C)" required="required" type="number" /><br />
+<input name="SECTOR" placeholder="SECTOR" required="required" type="text" /><br />
+<input name="CAPACITY" placeholder="CAPACITY" required="required" type="text" /><br />
+<input name="OCCUPANCY_DATE_Month" placeholder="OCCUPANCY_DATE_Month" required="required" type="date" /><br />
+<button class="btn btn-primary btn-block btn-large" type="submit">Predict</button>
+
+  
+</form>
+<br />
+&nbsp;</div>
+
+<p>{{pred}}</p>
+</body>
+</html>
