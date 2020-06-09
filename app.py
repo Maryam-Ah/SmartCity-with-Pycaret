@@ -6,7 +6,7 @@ import numpy as np
 
 app = Flask(__name__)
 
-model = load_model('finalized_rf_model')
+model = load_model('finalized_rf_model2')
 cols = ['Existing Shelters In Area', 'Max Temp (°C)', 'Min Temp (°C)', 'SECTOR', 'CAPACITY', 'OCCUPANCY_DATE_Month']
 
 @app.route('/')
