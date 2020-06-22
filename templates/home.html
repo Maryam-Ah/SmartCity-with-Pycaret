@@ -10,7 +10,7 @@
 </head>
 <body>
 <div class="login">
-<h1>Predict the number of empty rooms in a shelter</h1>
+<h1>Predict the number of empty rooms in a shelter in Toronto</h1>
 <!-- Form to enter new data for predictions  -->
 <form action="{{ url_for('predict')}}" method="POST">
 
@@ -23,7 +23,7 @@
 
 <!-- <input name="SECTOR" placeholder="SECTOR" required="required" type="text" /><br /> -->
 	
-<label for="SECTOR">Choose a SECTOR:</label>
+<label for="SECTOR">Choose the Sector type:</label>
   <select id="SECTOR" name="SECTOR">
     <option value="Co-ed" type = "text">Co-ed</option>
     <option value="Youth" type = "text">Youth</option>
@@ -32,7 +32,7 @@
     <option value="Women" type = "text">Women</option>
   </select>
 	
-	
+	<br />
 
 <input name="CAPACITY" placeholder="CAPACITY" required="required" type="number" /><br />
 
