@@ -16,11 +16,28 @@
 
 
 <input name="Existing Shelters In Area" placeholder="Existing Shelters In Area" required="required" type="number" /><br />
+	
 <input name="Max Temp (°C)" placeholder="Max Temp (°C)" required="required" type="number" step="any" min="-9999" max="9999" /><br />
+
 <input name="Min Temp (°C)" placeholder="Min Temp (°C)" required="required" type="number" step="any" min="-9999" max="9999" /><br />
-<input name="SECTOR" placeholder="SECTOR" required="required" type="text" /><br />
+
+<!-- <input name="SECTOR" placeholder="SECTOR" required="required" type="radio" /><br /> -->
+	
+<label for="SECTOR">Choose a SECTOR:</label>
+  <select id="SECTOR" name="SECTOR">
+    <option value="Co-ed">Co-ed</option>
+    <option value="Youth">Youth</option>
+    <option value="Families">Families</option>
+    <option value="Men">Men</option>
+    <option value="Women">Women</option>
+  </select>
+	
+	
+
 <input name="CAPACITY" placeholder="CAPACITY" required="required" type="number" /><br />
+
 <input name="OCCUPANCY_DATE_Month" placeholder="OCCUPANCY_DATE_Month" required="required" type="date" /><br />
+
 <button class="btn btn-primary btn-block btn-large" type="submit">Predict</button>
 
   
