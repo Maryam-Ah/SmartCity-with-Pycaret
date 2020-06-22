@@ -20,7 +20,7 @@ def predict():
     data_unseen = pd.DataFrame([final], columns = cols)
     prediction = predict_model(model, data=data_unseen, round = 0)
     prediction = int(prediction.Label[0])
-    return render_template('home.html',pred= 'Number of empty rooms {}'.format(prediction))
+    return render_template('home.html',pred= 'Number of empty rooms : {}'.format(prediction))
 
 @app.route('/predict_api',methods=['POST'])
 def predict_api():
